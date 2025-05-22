@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desert</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <main>
-    <section class="desert-container">
-      <h1>Desert</h1>
-      <section class="desert-card-container" aria-labelledby="desert-cards-heading">
-        
-        <div class="card">
-          <h2 id="desert-cards-heading">Desert Cards</h2>
-        </div>
-        <div class="card">
-          <h2 id="desert-cards-heading">Desert Cards</h2>
-        </div>
-        <div class="card">
-          <h2 id="desert-cards-heading">Desert Cards</h2>
-        </div>
-        <div class="card">
-          <h2 id="desert-cards-heading">Desert Cards</h2>
-        </div>
-        <div class="card">
-          <h2 id="desert-cards-heading">Desert Cards</h2>
-        </div>
-        <div class="card">
-          <h2 id="desert-cards-heading">Desert Cards</h2>
-        </div>
-        <div class="card">
-          <h2 id="desert-cards-heading">Desert Cards</h2>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dessert</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Dessert Section -->
+      <section class="dessert-container">
+        <h1>Dessert</h1>
+        <section
+          id="dessert-container"
+          class="dessert-card-container"
+          aria-labelledby="dessert-cards-heading"
+        ></section>
       </section>
-    </section>
-    
-    <aside class="checkout-container">
-      <h3 class="cart-title">Your Cart(7)</h3>
-      <div class="cart-content">Your Desert</div>
-      <div class="total-amout">
-        <p>Order Total</p>
-        <p class="amout">$46.50</p>
+
+      <!-- Cart Sidebar -->
+      <aside class="checkout-container">
+        <h3 class="cart-title">Your Cart(0)</h3>
+        <div class="cart-content">
+          <!-- Cart items injected here -->
+        </div>
+
+        <div class="total-amout">
+          <p>Order Total</p>
+          <p class="amout">$0.00</p>
+        </div>
+
+        <div class="delivery-tag">
+          <img src="./assets/images/icon-carbon-neutral.svg" alt="carbon neutral">
+          <p>This is a <strong>carbon-neutral</strong> delivery</p>
+        </div>
+
+        <button id="confirm-order">Confirm Order</button>
+      </aside>
+    </main>
+
+    <!-- Order Confirmation Modal -->
+    <div id="order-modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="">
+        <h2 class="modal-title">Order Confirmed</h2>
+        <p class="modal-subtitle">We hope you enjoy your food!</p>
+        <div id="modal-cart-items" class="modal-cart-items"></div>
+        <button id="start-new-order" class="confirm-btn">
+          Start New Order
+        </button>
       </div>
-      <div class="delivery-tag">
-        <p>icon</p>
-        <p>This is a <strong>carbon-neutral </strong>delivery</p>
-      </div>
-      <button>Confirm Order</button>
-    </aside>
-  </main>
-  <script src="./main.js"></script>
-</body>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+  </body>
 </html>
