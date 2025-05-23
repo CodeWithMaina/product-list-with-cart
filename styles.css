@@ -29,6 +29,7 @@ main {
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem 0;
+  margin-left: 2.5rem;
 }
 .dessert-card-container {
   display: grid;
@@ -36,7 +37,7 @@ main {
   gap: 1rem;
 }
 
-/* Card Design */
+/* card design */
 .card {
   display: flex;
   flex-direction: column;
@@ -95,7 +96,7 @@ main {
   font-weight: bold;
 }
 
-/* Cart Item */
+/* cart item */
 .cart-content {
   display: flex;
   flex-direction: column;
@@ -126,7 +127,7 @@ main {
   background-color: var(--Red);
 }
 
-/* Checkout Container */
+/* checkout container */
 .checkout-container {
   background-color: white;
   padding: 1.5rem;
@@ -169,7 +170,7 @@ main {
   background-color: hsl(14, 86%, 38%);
 }
 
-/* Order confirmation modal */
+/* order confirmation modal */
 
 .modal {
   position: fixed;
@@ -257,7 +258,7 @@ main {
   background-color: hsl(14, 86%, 38%);
 }
 
-/* Mobile Responsiveness */
+/* mobile responsiveness */
 @media (max-width: 576px) {
   main {
     flex-direction: column;
@@ -273,7 +274,7 @@ main {
   }
 }
 
-/* Tablet Responsiveness */
+/* tablet responsiveness */
 @media (min-width: 576px) and (max-width: 992px) {
   main {
     flex-direction: column;
